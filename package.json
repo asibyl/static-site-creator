@@ -1,0 +1,43 @@
+{
+  "name": "static-site-creator",
+  "version": "0.1.0",
+  "description": "CLI tool to set up static sites with Zola, GitHub and AWS",
+  "main": "bin/ssc.js",
+  "bin": {
+    "ssc": "./bin/ssc.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "zola",
+    "static-site",
+    "aws",
+    "cloudfront",
+    "s3",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-acm": "^3.360.0",
+    "@aws-sdk/client-cloudfront": "^3.360.0",
+    "@aws-sdk/client-iam": "^3.360.0",
+    "@aws-sdk/client-route-53": "^3.360.0",
+    "@aws-sdk/client-s3": "^3.360.0",
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "conf": "^11.0.1",
+    "execa": "^5.1.1",
+    "inquirer": "^8.2.5",
+    "keytar": "^7.9.0",
+    "listr2": "^6.6.0",
+    "node-fetch": "^2.6.7",
+    "octokit": "^3.1.0",
+    "open": "^8.4.0",
+    "ora": "^5.4.1"
+  },
+  "engines": {
+    "node": ">=14.16"
+  }
+}
