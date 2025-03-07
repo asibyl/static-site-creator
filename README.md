@@ -130,6 +130,23 @@ git commit -a
 git push 
 ```
 
+## Caveat Emptor
+1. Hardcoded GitHub certificate thumbprint may become outdated. This thumbprint validates GitHub's OIDC provider certificate.
+
+> todo: Implement automatic thumbprint retrieval or periodic updates from a trusted source
+
+2. Input validation is limited. 
+
+> todo: ensure AWS resoure naming follow naming rules with allowed characters. Check for proper formatting before attempting Route53 operations. Validator repo names match GitHub's constraints. Sanitize site name and other inputs to prevent path traversal. Add stronger validation when handling ACM certificates and proper error handling for certificate validation failures.
+
+3. User experience could improve e.g. support recovery and rollback in case of failures, better input validation, clearing credentials 
+
+> todo: improve user experience and complete credential management
+
+4. Missing test suite.
+
+> todo: complete test infrastructure
+
 
 ## License
 
