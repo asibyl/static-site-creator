@@ -130,7 +130,7 @@ git commit -a
 git push 
 ```
 
-## Caveat Emptor
+## To do
 1. Hardcoded GitHub certificate thumbprint may become outdated. This thumbprint validates GitHub's OIDC provider certificate.
 
 > todo: Implement automatic thumbprint retrieval or periodic updates from a trusted source
